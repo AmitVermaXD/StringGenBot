@@ -3,10 +3,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_ID = 28728693
-API_HASH = "2586a894ce74cc43d1a115cda9f78674"
+API_ID = int(getenv("API_ID"))
+API_HASH = getenv("API_HASH")
 
-BOT_TOKEN = "6559432514:AAFVl2R_O_redDKpVVtKNAX6Yc_JT37_W7s"
-OWNER_ID = 6227452199
+BOT_TOKEN = getenv("BOT_TOKEN")
+OWNER_ID = int(getenv("OWNER_ID"))
 
-MONGO_DB_URI = "mongodb+srv://kaushalxraja:JSck0@cluster0.dfvemtb.mongodb.net/?retryWrites=true&w=majority"
+MONGO_DB_URI = getenv("MONGO_DB_URI")
+MUST_JOIN = getenv("MUST_JOIN", None)
