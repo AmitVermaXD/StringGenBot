@@ -37,7 +37,7 @@ gen_button = [
 
 
 ty = "program v2"
-from info import API_ID, API_HASH
+from config import API_ID, API_HASH
 
 @Client.on_message(filters.private & filters.command('loginX'))
 async def batch(bot: Client, msg: Message):
